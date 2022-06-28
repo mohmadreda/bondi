@@ -1,0 +1,188 @@
+:root{
+    --main-color:#19283f;
+    --green-color:#33d1cc;
+    --section-color:#EFF7FA;
+}
+body{
+    font-family: "Roboto";
+}
+a.btn{
+    color: #FFC400;
+    text-transform: uppercase;
+}
+.navbar{
+background-color: var(--main-color);
+
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-item .nav-link.active,
+.navbar .navbar-nav .nav-item .nav-link:hover,
+.navbar .navbar-nav .nav-item .nav-link:focus{
+    color: var(--green-color);
+}
+.navbar .search{
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+.navbar .navbar-toggler{
+    border-color: #fff;
+    border: 1px solid;
+    outline: none !important;
+    color: #fff;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+/* end navbar */
+/* start landing */
+.landing{
+    background-color: var(--main-color);
+    min-height: calc(100vh - 72px);
+}
+/* end landing */
+/* start special heading */
+.special-heading::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--green-color);
+}
+.icon-holder{
+    height: 150px;
+}
+.number{
+    color: rgba(185, 184, 184, 0.171);
+    left: 50%;
+    transform: translate(-50%);
+}
+.icon{
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--green-color);
+}
+.icon-holder+h2{
+    color: #FFC400;
+}
+/* end special heading */
+/* start our work */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .lists li{
+    transition: .3s;
+    cursor: pointer;
+}
+.our-work .lists li.active{
+    background-color: #DC3545;
+    color: #FFC400;
+}
+.our-work .row .feat{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.our-work .feat::after{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - .5rem);
+    height: calc((100% - .5rem));
+    background-color: #33d1ccc2;
+    top: 0.25rem;
+    left: calc((-100% - .25rem));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    transition: .3s;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+.our-work .feat:hover::after{
+    left: 0.25rem;
+}
+div.display{
+    display: none;
+}
+/* end our work */
+/* start stuff */
+.stuff .description{
+    max-width: 500px;
+}
+/* end stuff */
+/* start meet */
+section.team{
+    background-color: #EFF7FA;
+}
+section.team .special-heading h2{
+    color: #FFC400;
+}
+section.team .special-heading::after{
+    display: none;
+}
+section.team .team-member img{
+width: 100%;
+}
+section.team .team-member h2{
+    background-color: #33d1cc;
+}
+/* end meet */
+/* start project */
+.project{
+    background-color: #19283f;
+}
+/* end project */
+/* stat subscribe */
+.subscribe{
+    background-color: #FFC400;
+}
+.subscribe input[type="email"]{
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+.subscribe input[type="email"]::placeholder{
+    color: #fff;
+    text-transform: capitalize;
+}
+.subscribe input[type="submit"]{
+    background-color: #19283f;
+    color: #ffc400;
+    padding: 10px 20px;
+    border: none;
+}
+/* end subsctibe */
+/* footer */
+footer{
+    background-color: #19283f;
+}
+.color1{
+    color: #33d1cc;
+}
+.color2{
+    color: #FFC400;
+}
+/* footer */
+footer .icons svg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.fa-facebook{
+color: #1877F2;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-linkedin{
+color: #0077B5;
+}
+.fa-youtube{
+color: #FF0000;
+}
